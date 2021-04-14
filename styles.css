@@ -1,0 +1,68 @@
+:root{
+  --color-green: #8bc34a;
+  --color-blue: #2196f3;
+  --color-gray: #8ea2ac;
+}
+
+body{
+  margin: 0;
+}
+
+
+.sidemenu{  
+  width: 225px;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  border-right: 1px solid black;
+}
+
+.sidemenu figure {
+  width: 145px;
+  height: 145px;
+  margin-top: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  place-self: center;
+}
+
+.sidemenu .sidemenu-list {
+  padding: 0;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.sidemenu .sidemenu-list .sidemenu-list__item{
+  list-style: none;
+  height: 50px;
+  text-align: center;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#inicio{
+  background-color: var(--color-green);
+}
+
+#terminados{
+  background-color: var(--color-blue);
+  margin-top: -10px;
+}
+
+#pendientes{
+  background-color: var(--color-gray);
+  margin-top: -10px;
+}
+
+.sidemenu .sidemenu-list .sidemenu-list__item a{
+  text-decoration: none;
+  color: black;
+}
+
+.sidemenu-list__item:hover{
+  position: relative;
+}
